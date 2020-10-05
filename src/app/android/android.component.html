@@ -1,0 +1,400 @@
+<div class="android">
+
+      <h3 class="project">PROJECT ONE</h3>
+        <h4 class="topic">DRIVER TRAVEL REQUEST MOBILE APP</h4>
+         <p class="text">The functionality of the android application is to discretely assign 
+        available and competent drivers already registered on the app data base 
+        to end users who own a car but not willing to drive at the moment
+</p>
+<h3 class="topic">OBJECTIVE</h3>
+<p class="text">To design a user friendly interface for both end user and driver application.<br>
+        To design and program a system that enable viewing of available registered driver and there location.<br>
+        To program a system that automatic bills the end user. 
+</p>
+<h3 class="topic">SCOPE</h3>
+<p class="text">This work cover wide range of mobile App features which include registration (Authentication), 
+        the login, interface, driver timing, rider location and destination,
+        end user feedback and the automating billing in accordance with parameters considered.
+ </p>
+<h3 class="project">THE DRIVER APP</h3>
+<h4 class="topic">REGISTRATION AND SIGN IN</h4>
+<p class="text">We designed the register and the login view in the MainActivity.java
+         and in the mainactivity.xml which is the first page the Driver will see when he 
+         clicks on the app. The background picture was designed and we also added some
+         directive text to guide the Driver.
+</p>
+<img class="landing_page" src="assets/android/Image1.png" alt="image">
+
+<p class="text">Register dialogue was created and the following features was added as details of the driver 
+        while registering <br><br>
+        NAME: This feature holds the full name of the driver.<br><br>
+        EMAIL: This feature requires a functional email of the driver.<br><br>
+        AGE: This holds the real age of the driver.<br><br>
+        PHONE: The driver’s active phone number is inserted here.<br><br>
+        PASSWORD: This requires a strong password that the driver can remember always.<br><br>
+        WORK EXPERIENCE: This require the year(s) experience the driver has gathered in his driving time.<br><br>
+        UPLOAD PASSPORT: The driver is required to upload a clear passport photograph in this field.<br><br>
+        UPLOAD DRIVERS LICENSE: The driver uploads his personal valid driver’s license.<br><br>
+        After the driver has added all the details, he click the submit button. 
+        A popup message will be displayed indicating whether it was successfully 
+        registered or not. The details will be stored in the firebase database if it was successfully registered.
+        When the driver has successfully registered, he can proceed by clicking the SIGN IN BUTTON. The driver is
+        also required to sign in with email and password that was used to register. An error message will be
+        displayed if the text entered in the fields didn’t match with the one used in registration.
+</p>
+
+    <div>
+        <div fxFlex fxLayout="row" fxLayoutAlign="flex-end" class="driver">
+          <ul fxLayout="row" fxLayoutGap="50px">
+            <img class="reg1" src="assets/android/Image2.png" alt="image">
+            <img class="reg2" src="assets/android/Image3.png" alt="image">
+            <img class="login" src="assets/android/Image4.png" alt="image">
+          </ul>
+        </div> 
+      </div>
+
+  <h4 class="topic">FIREBASE DATABASE</h4>    
+  <img class="database" src="assets/android/Image5.png" alt="image">
+  <img class="database" src="assets/android/Image6.png" alt="image">
+
+  <h4 class="topic">FIREBASE AUTHENTICATION</h4>    
+  <img class="database" src="assets/android/Image7.png" alt="image">
+
+  <h4 class="topic">FIREBSAE STORAGE</h4>
+<img class="database" src="assets/android/Image8.png" alt="image">
+
+<h4 class="topic">GOOGLE MAP IMPLEMENTATION</h4>
+<p class="text">Google map Activity was added to the project and an API key for the Google Map was generated.
+         Google place services library was also added
+</p>
+<img class="landing_page" src="assets/android/Image9.png" alt="image">
+
+<h4 class="topic">GOOGLE PLACES AUTOCOMPLETE</h4>
+<p class="text">Google places API was integrated to the driver app. 
+        The driver on typing the pickup location, 
+        suggestions on the likely place is made via the google places search.
+</p>
+<h4 class="topic">SHOW DIRECTION OF THE USER/RIDER</h4>
+<p class="text">The direction of the pickup location of the user will be shown while the 
+        driver enters the riders destination on the search bar.
+</p>
+<img class="landing_page" src="assets/android/Image10.png" alt="image">
+
+<h3 class="project">RIDER/USER APP</h3>
+<h4 class="topic"> REGISTER AND SIGN IN</h4>
+<p class="text">The rider app project was created and added to the same database as the driver app in 
+        firebase database. The layout for the register and login was setup. 
+        Every detail of the rider is stored in same database as the driver
+</p>
+    <div>
+        <div fxFlex fxLayout="row" fxLayoutAlign="flex-end" class="driver">
+          <ul fxLayout="row" fxLayoutGap="50px">
+            <img class="reg1" src="assets/android/Image11.png" alt="image">
+            <img class="reg2" src="assets/android/Image12.png" alt="image">
+            <img class="login" src="assets/android/Image13.png" alt="image">
+          </ul>
+        </div> 
+      </div>
+
+<h4 class="topic">SHOW EXACT LOCATION</h4>
+<p class="text">Google map was added to the rider app to make it show the exact place of the rider when the rider
+         log’s in. location services was also
+         integrated from google play and geo fire API was enabled in the rider app.        
+</p>
+<img class="landing_page" src="assets/android/Image14.png" alt="image">
+
+<h4 class="topic">PICKUP REQUEST</h4>
+<p class="text">We created functions for the pickup request of the rider by the tap of pickup 
+        Request button. 
+        Pickup location and destination was designed, calculate distance and time method was used
+         to get fare estimate. I added all the library that was expected.
+ </p>
+ <h4 class="topic">CALCULATE BILL OF SERVICE</h4>
+ <p class="text">A dialogue for display location, destination and estimated billing of the user was created. 
+         It was created through the custom marker info. 
+         This dialogue also displayed the estimated distance and time for the travel.       
+  </p>
+  <img class="landing_page" src="assets/android/Image15.png" alt="image">
+
+<h4 class="topic">LOAD ALL AVAILABLE DRIVERS</h4>
+<p class="text">The find driver section was designed. Functions to load all available drivers with the
+         range of 5 km was developed. The rider can view available drivers from the app.
+         The database info for this function was equally updated.
+</p>
+<div>
+        <div fxFlex fxLayout="row" fxLayoutAlign="flex-end" class="available_driver">
+          <ul fxLayout="row" fxLayoutGap="150px">
+            <img class="reg1" src="assets/android/Image16.png" alt="image">
+            <img class="reg2" src="assets/android/Image17.png" alt="image">
+        
+          </ul>
+        </div> 
+      </div>
+
+<h4 class="topic"> INFORMATION STORED IN THE DATABASE WITH THEIR REFERENCE NAME</h4>      
+<p class="text">Drivers: Table store information about Location of Driver that are available<br><br>
+        Pickup Request: Table store information about pickup Request of Users<br><br>
+        Riders Information: Store information of users who register from the Rider App<br><br>
+        Drivers Information: This table store information about Driver who register from Driver app<br><br>
+</p>
+<h4 class="topic"> FIREBASE MESSAGING</h4>
+<p class="text"> Firebase messaging library and retrofit and Gson converter was added.
+         We also added Refreshed Token to the app, Token table was created in the database.
+          Whenever a new request is made, a new token for the request is generated.
+</p>
+<h4 class="topic">PRESENCE SYSTEM</h4>
+<p class="text">Presence system was integrated into the Driver app and Rider App. 
+        The driver can be able to turn off his presence when he is busy and turn on when his is not busy. 
+        The rider will not see any driver available when the driver is offline.
+         We updated real time available drivers in the driver app
+</p>
+ 
+<div>
+    <div fxFlex fxLayout="row" fxLayoutAlign="flex-end" class="available_driver">
+        <ul fxLayout="row" fxLayoutGap="150px">
+          <img class="reg1" src="assets/android/Image18.png" alt="image">
+          <img class="reg2" src="assets/android/Image19.png" alt="image">
+      
+        </ul>
+      </div> 
+    </div>
+
+    <h4 class="topic">DRIVER NOTIFICATION</h4>
+    <p  class="text">The driver gets a notification as a call when the user makes a request by the rider. 
+            We created alert driver method. A request notification was sent to the driver on request. 
+            The driver gets a call notification when a request is put to him by a rider. We used advanced
+             rest client software (ARC) to generate 
+            a http post notification to the driver when request are made
+    </p>
+    <h4 class="topic">ACCEPT AND DECLINE BUTTON</h4>
+    <p class="text">ACCEPT AND DECLINE buttons was added on the driver app to enable him accept or decline 
+            bookings put to them by the riders. When the accept button is clicked it will show 
+        direction from driver location to customer real time
+    </p>
+    <img class="landing_page" src="assets/android/Image20.png" alt="image">
+
+    <h4 class="topic">DRIVER ARRIVAL MESSAGE</h4>
+    <p class="text">An additional function was added to send a message to the rider when the driver
+             arrived the pickup location.
+    </p>
+
+    <h3 class="project">PROJECT TWO</h3>
+    <h4  class="topic">TITLE: CAKE ORDERING APP</h4>
+    <p class="text">
+        DESCRIPTION: The app has a collection of all the cakes made by my client. users who wants to
+         request a cake for a ceremony or occasion and select a cake from the list of available cakes.<br><br>
+        There are two sections of the cake which are the BIRTHDAY CAKES AND THE WEEDING CAKES.<br><br>
+        The expected price of the cake are show in the app. when the user makes a choice by selecting
+         the cake he or she wants, it takes them to the info page where they will fill out a form 
+         concerning them and when they will need the cake. A submit button is clicked after filling out
+          the form by the user. the data entered got stored in the app database created with firebase. 
+          Also the owner of the app (my client) receive this data in her mail as notification.
+    </p>
+
+    <div>
+        <div fxFlex fxLayout="row" fxLayoutAlign="flex-end" class="available_driver">
+            <ul fxLayout="row" fxLayoutGap="150px">
+              <img class="reg1" src="assets/android/Image21.png" alt="image">
+              <img class="reg2" src="assets/android/Image22.png" alt="image">
+        
+            </ul>
+          </div> 
+        </div>
+        <p class="text">
+                The user fill the form. The information of the user will be received by the 
+                 owner of the cake app company. The picture of the cake will also be received. 
+                 The message is sent to the owner email address when any request is made. 
+        </p>
+        <div>
+                <div fxFlex fxLayout="row" fxLayoutAlign="flex-end" class="available_driver">
+                    <ul fxLayout="row" fxLayoutGap="150px">
+                      <img class="reg1" src="assets/android/Image23.png" alt="image">
+                      <img class="reg2" src="assets/android/Image24.png" alt="image">
+                
+                    </ul>
+                  </div> 
+                </div>
+                <p class="text">
+                        When the user clicks on the submit button, an expicit intent is triggered.
+                        The reference is email address.
+                        The email address of the owner is passed as a value for the putExtra() function;
+                </p>
+
+         <h4 class="topic">Testing in android studio emulator</h4>       
+         <img class="database" src="assets/android/Image25.png" alt="image">
+         <h4 class="topic">CAKE APP USER DATABASE</h4>
+         <img class="database" src="assets/android/Image26.png" alt="image">
+
+         <h3 class="project">PROJECT THREE</h3>
+         <h4 class="topic">TITLE: AUTOSTAR PROJECT PROPOSAL FOR TRAVEL REQUEST</h4>
+         <h5 class="topic">THE USER INTERFACE OF THE APP</h5>
+         <div>
+                <div fxFlex fxLayout="row" fxLayoutAlign="flex-end" class="driver">
+                  <ul fxLayout="row" fxLayoutGap="50px">
+                    <img class="reg1" src="assets/android/Image34.png" alt="image">
+                    <img class="reg2" src="assets/android/Image27.png" alt="image">
+                    <img class="login" src="assets/android/Image29.png" alt="image">
+                  </ul>
+                </div> 
+              </div>
+              <div>
+                <div fxFlex fxLayout="row" fxLayoutAlign="flex-end" class="driver">
+                  <ul fxLayout="row" fxLayoutGap="50px">
+                    <img class="reg1" src="assets/android/Image28.png" alt="image">
+                    <img class="reg2" src="assets/android/Image33.png" alt="image">
+                    <img class="login" src="assets/android/Image32.png" alt="image">
+                  </ul>
+                </div> 
+              </div>
+              <div>
+                <div fxFlex fxLayout="row" fxLayoutAlign="flex-end" class="driver">
+                  <ul fxLayout="row" fxLayoutGap="50px">
+                    <img class="reg1" src="assets/android/Image31.png" alt="image">
+                    <img class="reg2" src="assets/android/Image30.png" alt="image">
+                    <img class="login" src="assets/android/Image35.png" alt="image">
+                  </ul>
+                </div> 
+              </div>
+
+              <h3 class="project">PROJECT FOUR</h3>
+              <h4 class="topic">TITLE: REST API</h4>
+              <h4 class="topic">GET REQUEST</h4>
+              <P class="text"> The app makes a get request from a server. It gets
+                      the top 20 learners and top 20 high skill IQ score of students
+                      participating in the google africa developer scholarship program 2020.
+                      it loads result in a fragment actvity using a recycler view. The user can 
+                      scroll between the pages using the tab functionality.
+              </P>
+              <div>
+                <div fxFlex fxLayout="row" fxLayoutAlign="flex-end" class="ui_gads">
+                    <ul fxLayout="row" fxLayoutGap="140px">
+                      <img class="launcher" src="assets/launcher.jpg" alt="image">
+                      <img class="learning"src="assets/learning.png" alt="image">
+                      <img class="skill"src="assets/skill.png" alt="image">
+            
+                    </ul>
+                </div> 
+            </div>
+              <h4 class="topic">POST REQUEST</h4>
+              <P class="text"> The students submit the project through the app by making a post 
+                      request to a google form online. The google form contain the required 
+                      fields of entry. Placeholders for the entries were added to the app.
+                      Each placeholder makes a significant field entry according to 
+                      the entry requirements in the google form. After entering the details, the student click the submit button.
+                      A popup dialog comes up, asking the student whether they are sure. if yes the result will 
+                      be displayed showing either the post is successful or not.
+                       </P>
+              <div>
+                <div fxFlex fxLayout="row" fxLayoutAlign="flex-end" class="ui_gads_1">
+                    <ul fxLayout="row" fxLayoutGap="30px">
+              
+                      <img class="form" src="assets/form.png" alt="image">
+                      <img class="query"src="assets/query.png" alt="image">
+                      <img class="success"src="assets/success.png" alt="image">
+                      <img class="fail"src="assets/fail.png" alt="image">
+                    </ul>
+                </div> 
+             </div>
+              
+
+              
+
+              <h3 class="project">PROJECT FIVE</h3>     
+              <h4 class="topic"> TITLE: ROOT OF EQUATION FINDER</h4> 
+              <p class="text">DESCRIPTION: The app was developed to calculate the roots of a quadratic equation by 
+                      entering the coefficients of the equation
+              </p>
+              <img class="landing_page" src="assets/android/Image36.png" alt="image">
+
+              <h3 class="project">PROJECT SIX</h3>     
+              <h4 class="topic"> TITLE: MYRECORDS</h4> 
+              <p class="text">The app shows the records of a student in a class. It displays the 
+                      CA Score and the Exam score of the student while the student logs
+                       in to his profile. It will be used to view the results of the students
+             </p>
+             <img class="landing_page" src="assets/android/Image37.png" alt="image">
+
+             <h5 class="topic">The Register and sign in of the App</h5>
+
+             <div>
+                <div fxFlex fxLayout="row" fxLayoutAlign="flex-end" class="available_driver">
+                    <ul fxLayout="row" fxLayoutGap="150px">
+                      <img class="reg1" src="assets/android/Image38.png" alt="image">
+                      <img class="reg2" src="assets/android/Image39.png" alt="image">
+                
+                    </ul>
+                </div> 
+             </div>
+
+             <h5 class="topic">The student log in and see his details and score if uploaded in the database</h5>
+
+             <img class="landing_page" src="assets/android/Image40.png" alt="image">
+
+
+            <h3 class="project">PROJECT SEVEN</h3>     
+             <h4 class="topic"> TITLE: HACKATTON APP</h4> 
+             <p class="text">This an IOT BASED APP developed during the Hackatton competition in University of
+                      Nigeria Nsukka. The app was developed to aid the control of power wastage and enhance energy
+                       management in the university. The app is interacting with the database of the
+                      hardware part of the project thereby allowing the buttons of the app to control the project
+                </p>
+                <h4  class="topic">MONITORING FOUR DIFFERENT BUILDINGS OF THE SCHOOL</h4>
+                <div>
+                        <div fxFlex fxLayout="row" fxLayoutAlign="flex-end" class="available_driver">
+                            <ul fxLayout="row" fxLayoutGap="150px">
+                              <img class="reg1" src="assets/android/Image42.png" alt="image">
+                              <img class="reg2" src="assets/android/Image43.png" alt="image">
+                        
+                            </ul>
+                        </div> 
+                     </div>
+                     <h4  class="topic">USING THE BUTTON TO TURN OFF AND ON LIGHTS IN A BUILDING</h4>
+                     <div>
+                             <div fxFlex fxLayout="row" fxLayoutAlign="flex-end" class="available_driver">
+                                 <ul fxLayout="row" fxLayoutGap="150px">
+                                   <img class="reg1" src="assets/android/Image46.png" alt="image">
+                                   <img class="reg2" src="assets/android/Image47.png" alt="image">
+                             
+                                 </ul>
+                             </div> 
+                          </div>
+                          <h4  class="topic">USING THE APP TO SET THE THRESHOLD OF ENERGY I N A BUILDING</h4>
+                          <div>
+                                  <div fxFlex fxLayout="row" fxLayoutAlign="flex-end" class="available_driver">
+                                      <ul fxLayout="row" fxLayoutGap="150px">
+                                        <img class="reg1" src="assets/android/Image44.png" alt="image">
+                                        <img class="reg2" src="assets/android/Image45.png" alt="image">
+                                  
+                                      </ul>
+                                  </div> 
+                               </div>
+                          
+        
+              <h3 class="project">PROJECT EIGHT</h3>     
+              <h4 class="topic"> TITLE: CLASSROOM APP</h4> 
+              <P class="text">This app was developed to enable the students in a class to upload and download study 
+                      materials to and from the app database respectively. The information or announcements was also added in the app.
+                       Class members can also see the time table of courses for the class
+                </P>
+
+
+            <div>
+                <div fxFlex fxLayout="row" fxLayoutAlign="flex-end" class="driver">
+                  <ul fxLayout="row" fxLayoutGap="50px">
+                    <img class="reg1" src="assets/android/Image48.png" alt="image">
+                    <img class="reg2" src="assets/android/Image52.png" alt="image">
+                    <img class="login" src="assets/android/Image51.png" alt="image">
+                  </ul>
+                </div> 
+              </div>                             
+
+              <div>
+                <div fxFlex fxLayout="row" fxLayoutAlign="flex-end" class="available_driver">
+                    <ul fxLayout="row" fxLayoutGap="150px">
+                      <img class="reg1" src="assets/android/Image49.png" alt="image">
+                      <img class="reg2" src="assets/android/Image50.png" alt="image">
+                
+                    </ul>
+                </div> 
+              </div>
+</div>              

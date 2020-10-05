@@ -1,0 +1,115 @@
+
+.project{
+    margin-top: 40px;
+    margin-left: 700px;
+    align-self: center;
+}
+.topic{
+    margin-top: 10px;
+    margin-left: 400px;
+
+
+}
+.text{
+    margin-top: 10px;
+    margin-left: 400px;
+    margin-right: 40px;
+}
+.landing_page{
+    margin-left: 470px;
+     width: 250px;
+     height:450px;
+     object-fit:fill;
+     margin-bottom: 10px;
+     margin-top: 10px;
+ 
+ }
+ .driver{
+    margin-bottom: 10px;
+    margin-right: 200px;
+ }
+ .reg1{
+    width: 250px;
+    height:450px;
+    object-fit:fill;
+ }
+ .reg2{
+    width: 250px;
+    height:450px;
+    object-fit:fill;
+
+ }
+ .login{
+    width: 250px;
+    height:450px;
+    object-fit:fill;
+ }
+ .database{
+    width: 750px;
+    height:500px;
+    object-fit:fill;
+    margin-left: 465px;
+    margin-bottom: 30px;
+ }
+ .available_driver{
+    margin-bottom: 10px;
+    margin-right: 400px;
+
+ }
+ .ui_gads{
+    margin-top: 10px;
+    margin-right: 170px;
+    width: 100px;
+ }
+  
+ .ui_gads_1{
+    margin-top: 10px;
+    margin-right: 160px;
+    
+    
+   }
+
+   .launcher{
+    width: 200px;
+    height:450px;
+    object-fit:fill;
+    
+   
+   
+}
+.learning{
+    width: 200px;
+    height:450px;
+    object-fit:fill;
+    
+   
+   
+}
+.skill{
+    width: 200px;
+    height:450px;
+    object-fit:fill;
+}
+.form{
+    width: 200px;
+    height:450px;
+    object-fit:fill;
+}
+.query{
+    width: 200px;
+    height:450px;
+    object-fit:fill;
+}
+.success{
+    width: 200px;
+    height:450px;
+    object-fit:fill;
+}
+.fail{
+    width: 200px;
+    height:450px;
+    object-fit:fill;
+}
+.android{
+    height: 600px;
+}
