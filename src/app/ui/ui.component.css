@@ -1,13 +1,13 @@
    .ui_gads{
     margin-top: 10px;
-    margin-right: 210px;
+    margin-left: 400px;
     width: 100px;
   
    }
    .ui_gads_1{
     margin-top: 10px;
-    margin-right: 200px;
-    
+    margin-left: 400px;
+    margin-right: 40px;
     
    }
 
@@ -54,7 +54,8 @@
 }
 .birthday{
     margin-top: 10px;
-    margin-right: 200px;
+    margin-left: 400px;
+    margin-right: 40px;
 
 }
 .intro_1{
@@ -77,7 +78,8 @@
 }
 .wedding{
     margin-top: 10px;
-    margin-right: 200px;
+    margin-left: 400px;
+    margin-right: 40px;
 
 }
 .intro_2{
@@ -101,7 +103,8 @@
 
 .driver{
     margin-top: 10px;
-    margin-right: 200px;
+    margin-left: 400px;
+    margin-right: 40px;
 }
 .launcher_driver{
     width: 250px;
@@ -123,7 +126,8 @@
 }
 .rider{
     margin-top: 10px;
-    margin-right: 200px;
+    margin-left: 400px;
+    margin-right: 40px;
 }
 .launcher_rider{
     width: 250px;
@@ -142,7 +146,8 @@
 }
 .class_app{
     margin-top: 10px;
-    margin-right: 200px;
+    margin-left: 400px;
+    margin-right: 40px;
 
 }
 .class_launcher{
@@ -162,7 +167,8 @@
 }
 .class_materials{
     margin-top: 10px;
-    margin-right: 200px;
+    margin-left: 400px;
+    margin-right: 40px;
 }
 .materials{
     width: 250px;
@@ -176,7 +182,8 @@
 }
 .animation_xd{
     margin-top: 10px;
-    margin-right: 320px;
+    margin-left: 400px;
+    margin-right: 40px;
 }
 .animation{
     width: 500px;

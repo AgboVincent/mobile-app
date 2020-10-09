@@ -3,21 +3,20 @@ footer{
     position: sticky;
     margin-bottom: 0px;
     width: 100%;
-    
+
     background-color: lightblue;
 }
 
-.phone_text{
-    margin-left: 600px;
-}
-.email_text{
-    margin-left: 600px;
-}
+
 .phone{
-    margin-left: 700px;
+    margin-left: 500px;
     margin-right: 20px;
 }
 .email{
     margin-left: 100px;
     margin-right: 20px;
+}
+
+.email_text{
+    margin-right: 50px;
 }
