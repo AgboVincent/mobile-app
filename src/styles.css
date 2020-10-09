@@ -79,19 +79,16 @@ p {
     margin-right: 50px;
     cursor: pointer; 
     padding: 5px;
+
 }
 .about-me:hover{
   background-color: blue;
   
-
-
 }
 
 .toolbar img {
   margin: 0 16px;
 }
-
-
 
 .content {
   display: flex;
@@ -110,7 +107,6 @@ svg.material-icons {
 svg.material-icons:not(:last-child) {
   margin-right: 8px;
 }
-
 
 footer {
   margin-bottom: 8px;
@@ -159,8 +155,6 @@ svg#clouds {
   z-index: -10;
   width: 1920px;
 }
-
-
-    
+   
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
